@@ -64,10 +64,10 @@ mergeNeighbors (DecBy a (IncBy b xs))     = Just $ DecBy   (a - b) xs
 mergeNeighbors _ = Nothing
 
 removeRedundant :: IR -> Maybe IR
-removeRedundant (LeftBy 0 xs) = Just xs
-removeRedundant (RightBy 0 xs) = Just xs
-removeRedundant (IncBy 0 xs) = Just xs
-removeRedundant (DecBy 0 xs) = Just xs
+removeRedundant (LeftBy  0 xs)  = Just xs
+removeRedundant (RightBy 0 xs)  = Just xs
+removeRedundant (IncBy   0 xs)  = Just xs
+removeRedundant (DecBy   0 xs)  = Just xs
 removeRedundant (Loop EndIR xs) = Just xs
 removeRedundant _ = Nothing
 
