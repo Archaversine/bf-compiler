@@ -20,7 +20,7 @@ Given the file `hello.bf`:
 
 Running BFC with the following command:
 
-```
+```bash
 bfc hello.bf output.c               # if BFC in PATH
 cabal run bfc -- hello.bf output.c  # if BFC not in PATH
 ```
